@@ -23,5 +23,5 @@ img {
   flex-flow: row wrap-reverse;
 }
 .images li {
-  flex: 1 0 300px;
+  flex: 1 1 300px;
 }
