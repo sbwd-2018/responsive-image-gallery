@@ -14,3 +14,14 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Modular Styles */
+
+/* Image Gallery */
+.images {
+  display: flex;
+  flex-flow: row wrap-reverse;
+}
+.images li {
+  flex: 1 0 300px;
+}
