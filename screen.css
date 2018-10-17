@@ -28,3 +28,9 @@ img {
   flex: 1 1 300px;
   padding: 5px;
 }
+
+@media screen and (min-width: 1200px) {
+  .images li {
+    flex: 1 0 350px;
+  }
+}
