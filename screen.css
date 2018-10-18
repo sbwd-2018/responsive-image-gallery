@@ -34,3 +34,9 @@ img {
     flex: 1 0 350px;
   }
 }
+
+/* Responsive Image Sizes */
+/* Largest single-column mobile: 609px */
+/* @630px: 300px */
+/* @939px: 455px */
+/* @940: 300px */
