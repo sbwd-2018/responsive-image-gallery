@@ -36,7 +36,15 @@ img {
 }
 
 /* Responsive Image Sizes */
-/* Largest single-column mobile: 609px */
-/* @630px: 300px */
-/* @939px: 455px */
-/* @940: 300px */
+/*
+                        @1x    @2x
+                        305px   610px;
+Up to 629px viewport:   610px  1220px
+At a 630px viewport:    300px   600px
+                        380px   760px;
+Up to a 939px viewport: 455px   910px
+At a 940px viewport:    300px   600px
+
+Starter image sizes:
+1220, 800, 650, 380
+*/
