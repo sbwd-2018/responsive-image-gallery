@@ -35,6 +35,14 @@ img {
   }
 }
 
+/* State Styles */
+.slideshow li {
+  display: none;
+}
+.slideshow li.is-showing {
+  display: block;
+}
+
 /* Responsive Image Sizes */
 /*
                         @1x    @2x
