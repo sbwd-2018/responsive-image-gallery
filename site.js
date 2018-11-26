@@ -11,8 +11,32 @@
 
   slides[0].className = 'is-showing';
 
+  // Create the next_slide stepper function from cycle(), defined below
+  var next_slide = cycle(slides);
+  var old_slide = slides[0];
+
   slideshow.addEventListener('click', function(e){
-    console.log(e.target, 'clicked')
+    old_slide.className = ''; // remove is-showing from old slide
+    var slide = next_slide();
+    slide.className = 'is-showing';
+    old_slide = slide;
   })
+
+  // Function to cycle endlesslyl through an array;
+  function cycle(arr) {
+    var max_index = arr.length - 1;
+    var current_index = 0;
+    return function() {
+      // increment the index by 1
+      current_index++;
+      // if the index is bigger than 1, reset to 0
+      if (current_index > max_index) {
+        current_index = 0;
+      }
+      var item = arr[current_index];
+      return item;
+    }
+  }
+
 
 })();
