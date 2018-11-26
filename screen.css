@@ -18,19 +18,19 @@ img {
 /* Modular Styles */
 
 /* Image Gallery */
-.images {
+.gallery .images {
   background: #222;
   display: flex;
   flex-flow: row wrap-reverse;
   padding: 5px;
 }
-.images li {
+.gallery .images li {
   flex: 1 1 300px;
   padding: 5px;
 }
 
 @media screen and (min-width: 1200px) {
-  .images li {
+  .gallery .images li {
     flex: 1 0 350px;
   }
 }
